@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,34 +18,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
+
+<body onscroll="changeNavSize()">
     <nav id="nav">
-        <a class="nav-link">Home</a>
+        <!-- <a class="nav-link">Home</a>
         <a class="nav-link">About</a>
-        <img id="nav-logo" src="/images/LogoWhiteWords.png" />
+        <div id="logo">
+            <img id="nav-logo" src="/images/TriangleAsphaltLogo.png">
+            <img id="nav-logo-small" src="/images/TriangleAsphaltLogoNoWords.png">
+        </div>
         <a class="nav-link">Images</a>
-        <a class="nav-link">Contact</a>
+        <a class="nav-link">Contact</a> -->
+        <div id="logo">
+            <img id="nav-logo-small" src="/images/TriangleAsphaltBannerWhite.svg">
+        </div>
     </nav>
-    <div class="background">
-        <img src="/images/Road.svg" />
+    <div class="background-div">
+        <img class="background-IMG" src="/images/Road.svg" />
     </div>
+    <button id="BackToTopBTN">Back to Top</button>
     <div id="banner">
-        
+        <img class="bannerIMG" src="/images/TriangleAsphaltBanner.svg">
     </div>
     <div id="about">
-
+        <div class="about-info">
+            <h1>Our Story</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+        </div>
     </div>
-    <div id="images">
-
+    <div id="SJ">
+        <div class="SJ-info">
+            <h1>S&J Construction</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
+                libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
+                cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
+        </div>
     </div>
     <div id="contact">
-
+        <div>
+            <h1>Contact</h1>
+            <h3>For all inquiries, please contact steve@triangleasphalt.com</h3>
+        </div>
     </div>
 
 
     <script src="main.js"></script>
 </body>
+
 </html>

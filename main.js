@@ -1,9 +1,30 @@
+// const changeNavSize = () => {
+
+//     let y = window.scrollY
+
+//     if (y > 50) {
+//         document.getElementById("nav-logo").style = "opacity:0"
+//         document.getElementById("nav-logo-small").style = "opacity:1"
+//         document.getElementById("logo").style = "height:10vh"
+//     } else {
+//         document.getElementById("nav-logo").style = "opacity:1"
+//         document.getElementById("nav-logo-small").style = "opacity:0"
+//         document.getElementById("logo").style = "height:20vh"
+//     }
+// }
+
 const changeNavSize = () => {
-    document.getElementById("nav").innerHTML = 
-        `<a class="nav-link" onClick="changeNavSize()">Home</a>
-        <a class="nav-link">About</a>
-        <img id="nav-logo" src="/images/LogoNoWords.png" />
-        <a class="nav-link">Images</a>
-        <a class="nav-link">Contact</a>`
-    document.getElementById("nav-logo").style = "height:10vh"
+
+    if (window.scrollY > window.innerHeight / 2) {
+        document.getElementById("nav-logo-small").style = "opacity:1"
+        document.getElementById("logo").style = "height:10vh"
+        document.querySelector("nav").style = "height:fit-content"
+        document.getElementById("BackToTopBTN").style = "opacity:1"
+    } else {
+        document.getElementById("nav-logo-small").style = "opacity:0"
+        document.getElementById("logo").style = "height:0vh"
+        document.querySelector("nav").style = "height:0vh"
+        document.getElementById("BackToTopBTN").style = "opacity:0"
+
+    }
 }

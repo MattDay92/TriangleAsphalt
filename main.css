@@ -4,23 +4,54 @@ html, body, *{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.background{
-    position:fixed;
-    bottom: -2%;
-    right: 0;
-    opacity: 0.4;
-    z-index: -1;
+h1{
+    font-size: 5vw;
 }
+
+.background-div{
+    position: fixed;
+    opacity: 0.4;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 50vw;
+}
+
+.background-IMG{
+    width: 100%;
+}
+
+#BackToTopBTN{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+    padding: 15px;
+    background: black;
+    color: rgb(255,229,122);
+    font-weight: 700;
+    border-radius: 10%;
+    opacity: 0;
+    transition: 0.5s
+}
+
+
+
+/* --------------------------NAVBAR-------------------------- */
+
+
 
 #nav{
     /* font-family: 'Rock Salt', cursive; */
     font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+    overflow-x: hidden;
     align-items: center;
-    height: fit-content;
+    height: 0vh;
     background: black;
     color: white;
+    z-index: 100;
 }
 
 .nav-link{
@@ -29,22 +60,89 @@ html, body, *{
     color: white;
 }
 
-#nav-logo{
-    height: 20vh;
+#logo{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    transition: 0.5s;
 }
+
+#nav-logo{
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#nav-logo-small{
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+/* -------------------------------BANNER------------------------------- */
+
+
 
 #banner{
-    height: 75vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+.bannerIMG{
+    position: absolute;
+    width: 50vw;
+    left: 5vw;
+}
+
+
+/* ----------------------------ABOUT------------------------------- */
+
+
+
 
 #about{
-    height: 75vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-#images{
-    height: 75vh;
+.about-info{
+    position: absolute;
+    right: 10%;
+    width: 40vw;
+    text-align: center;
 }
+
+
+
+/* ---------------------------S&J------------------------------- */
+
+
+
+
+#SJ{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.SJ-info{
+    position: absolute;
+    left: 10%;
+    width: 40vw;
+    text-align: center;
+}
+
+
+/* ---------------------------CONTACT------------------------------ */
 
 #contact{
-    height: 75vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
