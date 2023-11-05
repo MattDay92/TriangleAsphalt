@@ -21,30 +21,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9183587fd.js" crossorigin="anonymous"></script>
 </head>
 
 <body onscroll="changeNavSize()">
     <nav id="nav">
-        <!-- <a class="nav-link">Home</a>
-        <a class="nav-link">About</a>
-        <div id="logo">
-            <img id="nav-logo" src="/images/TriangleAsphaltLogo.png">
-            <img id="nav-logo-small" src="/images/TriangleAsphaltLogoNoWords.png">
-        </div>
-        <a class="nav-link">Images</a>
-        <a class="nav-link">Contact</a> -->
+        <p class="nav-info">(765) 482-5701</p>
         <div id="logo">
             <img id="nav-logo-small" src="/images/TriangleAsphaltBannerWhite.svg">
         </div>
+        <div class="nav-info">
+            <p>Proudly serving Central Indiana since 1961</p>
+        </div>
     </nav>
     <div class="background-div">
-        <img class="background-IMG" src="/images/Road.svg" />
+        <!-- <img class="background-IMG" src="/images/Road.svg" /> -->
     </div>
-    <button id="BackToTopBTN">Back to Top</button>
+
+    <button onclick="scrollToTop()" id="BackToTopBTN">Back to Top</button>
+    <a href="https://www.linkedin.com/company/triangle-asphalt-paving-corp/" target="_blank" id="LinkedInBTN"><i class="fa-brands fa-linkedin"></i></a>
+
     <div id="banner">
-        <img class="bannerIMG" src="/images/TriangleAsphaltBanner.svg">
+        <img class="bannerIMG" src="/images/TriangleAsphaltBannerWhite.svg">
     </div>
     <div id="about">
+        <img class="about-IMG" src="/images/Collage1.svg" />
         <div class="about-info">
             <h1>Our Story</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolore
@@ -71,6 +72,7 @@
                 libero sapiente rerum similique soluta odit vitae natus amet ipsa velit
                 cupiditate sunt nulla sint ex in? Est, et temporibus.</p>
         </div>
+        <img class="SJ-IMG" src="/images/Collage2.svg" />
     </div>
     <div id="contact">
         <div>
@@ -78,7 +80,6 @@
             <h3>For all inquiries, please contact steve@triangleasphalt.com</h3>
         </div>
     </div>
-
 
     <script src="main.js"></script>
 </body>

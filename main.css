@@ -4,6 +4,11 @@ html, body, *{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+    background: linear-gradient(130deg, rgb(183, 183, 183), rgb(40, 40, 40) 100%);;
+    color: white
+}
+
 h1{
     font-size: 5vw;
 }
@@ -21,18 +26,33 @@ h1{
     width: 100%;
 }
 
-#BackToTopBTN{
+#BackToTopBTN, #LinkedInBTN{
     position: fixed;
-    right: 5%;
-    bottom: 5%;
     z-index: 100;
     padding: 15px;
-    background: black;
-    color: rgb(255,229,122);
     font-weight: 700;
     border-radius: 10%;
     opacity: 0;
     transition: 0.5s
+}
+
+#BackToTopBTN{
+    right: 5%;
+    bottom: 5%;
+    background: black;
+    /* color: rgb(255,229,122); */
+    color: white;
+}
+
+#LinkedInBTN{
+    left: 5%;
+    bottom: 5%;
+    font-size: xxx-large;
+    color: white;
+}
+
+#LinkedInBTN:hover{
+    color: rgb(255,229,122);
 }
 
 
@@ -44,6 +64,8 @@ h1{
 #nav{
     /* font-family: 'Rock Salt', cursive; */
     font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     width: 100vw;
     overflow-x: hidden;
@@ -58,6 +80,11 @@ h1{
     font-size: 1.5vw;
     text-decoration: none;
     color: white;
+}
+
+.nav-info{
+    width: 15vw;
+    text-align: center;
 }
 
 #logo{
@@ -87,14 +114,16 @@ h1{
 
 #banner{
     height: 100vh;
+    width: 80vw;
+    margin: auto;
     display: flex;
     align-items: center;
 }
 
 .bannerIMG{
     position: absolute;
-    width: 50vw;
-    left: 5vw;
+    width: 45vw;
+    left: 10vw;
 }
 
 
@@ -105,13 +134,18 @@ h1{
 
 #about{
     height: 100vh;
+    width: 80vw;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.about-IMG{
+    width: 40vw;
 }
 
 .about-info{
-    position: absolute;
-    right: 10%;
     width: 40vw;
     text-align: center;
 }
@@ -125,15 +159,20 @@ h1{
 
 #SJ{
     height: 100vh;
+    width: 80vw;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .SJ-info{
-    position: absolute;
-    left: 10%;
     width: 40vw;
     text-align: center;
+}
+
+.SJ-IMG{
+    width: 40vw;
 }
 
 
@@ -141,6 +180,8 @@ h1{
 
 #contact{
     height: 100vh;
+    width: 80vw;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
